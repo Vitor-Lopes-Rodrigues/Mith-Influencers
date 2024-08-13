@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+body {
+    font-family: 'Geologica', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#container-NavBar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-logo {
+    max-width: 2.5vw;
+}
+
+.navbar-item {
+    margin-left: 1vw;
+    color: #ffffff;
+}
+
+.navbar-item:hover {
+    color: #cccccc;
+}
+
+#wallpaper {
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    filter: blur(2px);
+}
