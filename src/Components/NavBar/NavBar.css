@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Geologica', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .navbar {
@@ -10,11 +12,6 @@ body {
     left: 0;
     width: 100%;
     z-index: 100;
-}
-
-body {
-    padding: 0;
-    margin: 0;
 }
 
 #container-NavBar {
@@ -40,4 +37,34 @@ body {
     display: flex;
     justify-content: center;
     filter: blur(2px);
+    height: 130vh;
+}
+
+#wallpaper img {
+    width: 75%;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    max-width: 80vw;
+    padding: 12vw;
+    box-sizing: border-box;
+}
+
+.carousel-container .slick-slide {
+    padding: 0 10px; /* Espaço horizontal entre os slides */
+}
+
+.carousel-container .slick-slide > div {
+    margin-bottom: 2vw; /* Espaço vertical entre os slides se necessário */
+}
+
+.carousel-container .slick-track {
+    display: flex;
 }
