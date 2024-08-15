@@ -21,83 +21,40 @@ import VitorCapial from '../../Images/Integrantes/VitorCapial.jpg';
 const cards = [
     {
         title: "Enzo Rocati",
-        description: "Com Rocati não tem essa de dia triste.\n" +
-            "Mais um dia para ser feliz! Bora?\n" +
-            "Conhecido também como a LENDA!",
+        description: "Enzo Rocati é um influenciador digital que se destaca por seu estilo de vida ativo e por ser um dos embaixadores da marca Mith...",
         imageUrl: EnzoRocati,
     },
     {
         title: "Calebe Dias",
-        description: "O nosso famoso careca dono do @clubedopumpoficial \n" +
-            "Faz a jogadinha!\n",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         imageUrl: CalebeDias,
     },
     {
         title: "Gabriel Ruano",
-        description: "O cara que procura levar motivação e inspiração para os seus \n" +
-            "seguidores.\n" +
-            "Ja foram AESTHETICS hoje?",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         imageUrl: GabrielRuano,
     },
     {
         title: "Géder Rocha",
-        description: "O grande Men’s Physique PRO 🥇.\n" +
-            "Além de coach, traz conteudo sobre seus dias.",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         imageUrl: GenderRocha,
     },
     {
         title: "Killyan Scherk",
-        description: "🥇 2x Top 1 Men’s Physique NBFB 2024\n" +
-            "🏆 Campeão Overall Men’s Physique\n" +
-            "Será que você treina fofo?",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         imageUrl: KillyanScherk,
     },
     {
         title: "Gabriel Gonçalves",
-        description: "🌐IFBB PRO\n" +
-            "Campeão Sur Pro cup 🏆\n" +
-            "Brasileiro 🇧🇷 mais novo a se classificar para Mr. ⭕️lympia",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         imageUrl: GabrielGoncalves,
     },
     {
         title: "Vitor Capial",
-        description: "Online Coach - TEAM CAPIAL\n" +
-            "Famoso inspirador pelo conjunto de roupa COMAM",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         imageUrl: VitorCapial,
     }
 ];
-
-// Componente CopyButton
-const CopyButton = ({ text }) => {
-    const handleCopyClick = () => {
-        navigator.clipboard.writeText(text).then(() => {
-            alert(`${text} copiado para a área de transferência!`);
-        });
-    };
-
-    return (
-        <Button
-            variant="contained"
-            color="primary"
-            onClick={handleCopyClick}
-            sx={{ mt: 2, backgroundColor: 'rgba(255, 255, 255, 0.7)', color: '#000' }}
-            startIcon={<FileCopyIcon />}
-        >
-            Cupom!
-        </Button>
-    );
-};
-
-// Mapeamento de títulos para textos de cópia
-const copyTextMap = {
-    "Enzo Rocati": "ROCATI",
-    "Calebe Dias": "Calebe Dias",
-    "Gabriel Ruano": "ruano",
-    "Géder Rocha": "GG",
-    "Killyan Scherk": "ki",
-    "Gabriel Gonçalves": "GGP",
-    "Vitor Capial": "Indisponivel",
-};
 
 const Carousel = () => {
     const settings = {
@@ -133,6 +90,12 @@ const Carousel = () => {
         ],
     };
 
+    const handleCopyClick = (text) => {
+        navigator.clipboard.writeText(text).then(() => {
+            alert(`${text} copiado para a área de transferência!`);
+        });
+    };
+
     return (
         <Slider {...settings}>
             {cards.map((card, index) => (
@@ -158,7 +121,15 @@ const Carousel = () => {
                         <Typography variant="body2" className="card-description">
                             {card.description}
                         </Typography>
-                        <CopyButton text={copyTextMap[card.title]} />
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            onClick={() => handleCopyClick(card.title)}
+                            sx={{ mt: 2, backgroundColor: 'rgba(255, 255, 255, 0.7)', color: '#000' }}
+                            startIcon={<FileCopyIcon />}
+                        >
+                            Copiar Nome
+                        </Button>
                     </Box>
                 </Card>
             ))}

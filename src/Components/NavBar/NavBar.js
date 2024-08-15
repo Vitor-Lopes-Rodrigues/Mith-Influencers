@@ -12,7 +12,7 @@ import '../Social-Medias/SocialMedias.css';
 // Import Images
 import MithOficialLogo from "../../Images/MithLogo.png";
 import MithFundoCarrossel from "../../Images/MithFundoCarrosel.png";
-import SocialMedias from "../Social-Medias/SocialMedias";
+// import SocialMedias from "../Social-Medias/SocialMedias";
 import FloatingButtons from "../Floating Social Networks/FloatingSocialNetworks";
 import Carousel from "../Carrosel-Card/CarroselCard";
 
