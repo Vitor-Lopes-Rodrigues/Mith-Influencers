@@ -19,7 +19,7 @@ import Carousel from "../Carrosel-Card/CarroselCard";
 function NavBarMith() {
     return (
         <>
-            <Navbar bg="dark" variant="dark">
+            <Navbar id='navbar' variant="dark">
                 <Container id='container-NavBar'>
                     <Navbar.Brand href="#container-NavBar"><img src={MithOficialLogo} alt="Logo" className="navbar-logo" /></Navbar.Brand>
                     <Navbar.Brand href="#home" className="navbar-item">Influencers</Navbar.Brand>

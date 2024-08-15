@@ -6,17 +6,24 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import './CarroselCard.css';
+
 
 // Import Images
 import EnzoRocati from '../../Images/Integrantes/EnzoRocati.png';
 import CalebeDias from '../../Images/Integrantes/CalebeDias.png';
 import GabrielRuano from '../../Images/Integrantes/GabrielRuano.png';
 import GenderRocha from '../../Images/Integrantes/GêderRocha.png';
+import KillyanScherk from '../../Images/Integrantes/KillyanScherk.jpg'
+import GabrielGoncalves from '../../Images/Integrantes/GabrielGoncalves.jpg';
+import VitorCapial from '../../Images/Integrantes/VitorCapial.jpg';
 
 const cards = [
     {
         title: "Enzo Rocati",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        description: "Enzo Rocati é um influenciador digital que se destaca por seu estilo de vida ativo e por ser um dos" +
+            " embaixadores da marca Mith. Suas postagens no Instagram, que variam de momentos de diversão ao ar livre até" +
+            " interações carismáticas com amigos e seguidores, refletem uma personalidade vibrante e autêntica.",
         imageUrl: EnzoRocati,
     },
     {
@@ -34,6 +41,21 @@ const cards = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         imageUrl: GenderRocha,
     },
+    {
+        title:"Killyan Scherk",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        imageUrl: KillyanScherk,
+    },
+    {
+        title:"Gabriel Gonçalves",
+        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+        imageUrl: GabrielGoncalves,
+    },
+    {
+      title: "Vitor Capial",
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+      imageUrl: VitorCapial,
+    }
     // Adicione mais cards aqui
 ];
 
@@ -74,7 +96,7 @@ const Carousel = () => {
     return (
         <Slider {...settings}>
             {cards.map((card, index) => (
-                <Card
+                <Card id="card"
                     key={index}
                     sx={{
                         backgroundImage: `url(${card.imageUrl})`,
@@ -82,16 +104,19 @@ const Carousel = () => {
                         backgroundPosition: 'center',
                         borderRadius: '15px',
                         color: '#fff',
-                        height: 400,
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'flex-end',
-                        p: 2,
+                        p: 0,
                     }}
                 >
-                    <Box sx={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', p: 2, borderRadius: '15px' }}>
-                        <Typography variant="h5">{card.title}</Typography>
-                        <Typography variant="body2">{card.description}</Typography>
+                    <Box id="cards">
+                        <Typography variant="h5" className="card-title">
+                            {card.title}
+                        </Typography>
+                        <Typography variant="body2" className="card-description">
+                            {card.description}
+                        </Typography>
                     </Box>
                 </Card>
             ))}
