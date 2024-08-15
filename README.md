@@ -1,6 +1,6 @@
 ### Bem vindo ao Projeto Mith Influencers 
 - Esse projeto é sem fins lucrativos! 💸
-- O objetivo é fazer com o que os Influencers da marca Mith possuam mais vizibilidade.😍
+- O objetivo é fazer com o que os Influencers da marca Mith possuam mais visibilidade.😍
 - Feito com toda dedicação e carinho😁
 
   <div syle="align-items: center">
@@ -37,7 +37,7 @@
 </div>
 
 
-####React Padrões
+#### React Padrões
 
 # Getting Started with Create React App
 
