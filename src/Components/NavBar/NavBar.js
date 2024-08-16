@@ -37,6 +37,13 @@ function NavBarMith() {
             <div>
                 <FloatingButtons />
             </div>
+            <footer className="footer">
+                <Container>
+                    <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer" className="footer-brand">
+                        &copy; 2024 Mith Oficial. Todos os direitos reservados.
+                    </Navbar.Brand>
+                </Container>
+            </footer>
         </>
     );
 }
