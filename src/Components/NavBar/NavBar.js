@@ -15,35 +15,37 @@ import MithFundoCarrossel from "../../Images/MithFundoCarrosel.png";
 // import SocialMedias from "../Social-Medias/SocialMedias";
 import FloatingButtons from "../Floating Social Networks/FloatingSocialNetworks";
 import Carousel from "../Carrosel-Card/CarroselCard";
+import AboutMith from "../AboutMith/AboutMith";
+import Footer from "../Footer/Footer";
 
 function NavBarMith() {
     return (
         <>
             <Navbar id='navbar' variant="dark">
                 <Container id='container-NavBar'>
-                    <Navbar.Brand href="#container-NavBar"><img src={MithOficialLogo} alt="Logo" className="navbar-logo" /></Navbar.Brand>
+                    <Navbar.Brand href="#container-NavBar"><img src={MithOficialLogo} alt="Logo"
+                                                                className="navbar-logo"/></Navbar.Brand>
                     <Navbar.Brand href="#home" className="navbar-item">Influencers</Navbar.Brand>
                     <Navbar.Brand href="#home" className="navbar-item">Home</Navbar.Brand>
-                    <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer" className="navbar-item">Site Oficial Mith</Navbar.Brand>
+                    <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer"
+                                  className="navbar-item">Site Oficial Mith</Navbar.Brand>
                     <Navbar.Brand href="#home" className="navbar-item">Sobre</Navbar.Brand>
                 </Container>
             </Navbar>
             <div id="wallpaper">
-                <img src={MithFundoCarrossel} alt="Fundo" />
+                <img src={MithFundoCarrossel} alt="Fundo"/>
             </div>
             <div className="carousel-container">
-                <Carousel />
+                <Carousel/>
             </div>
-            <div>
-                <FloatingButtons />
-            </div>
-            <footer className="footer">
-                <Container>
-                    <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer" className="footer-brand">
-                        &copy; 2024 Mith Oficial. Todos os direitos reservados.
-                    </Navbar.Brand>
-                </Container>
-            </footer>
+            {/*<div>*/}
+            {/*    <FloatingButtons />*/}
+            {/*</div>*/}
+            <br/>
+            <AboutMith/>
+            <Footer/>
+
+
         </>
     );
 }

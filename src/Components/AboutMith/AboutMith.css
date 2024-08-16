@@ -1,0 +1,40 @@
+.about-mith-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 500vw;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 0;
+    transition: all 0.3s ease;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.card ul {
+    margin-top: 0;
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.card:hover {
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}

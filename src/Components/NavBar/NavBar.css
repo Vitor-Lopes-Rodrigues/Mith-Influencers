@@ -48,7 +48,7 @@ body {
     display: flex;
     justify-content: center;
     filter: blur(2px);
-    height: 130vh;
+    height: 98vh;
 }
 
 #wallpaper img {
@@ -78,4 +78,9 @@ body {
 
 .carousel-container .slick-track {
     display: flex;
+}
+
+.about-mith-text{
+    align-items: center;
+    justify-content: center;
 }
