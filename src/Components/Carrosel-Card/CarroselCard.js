@@ -8,6 +8,8 @@ import FileCopyIcon from '@mui/icons-material/FileCopy';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './CarroselCard.css';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 
 // Import Images
 import EnzoRocati from '../../Images/Integrantes/EnzoRocati.png';
@@ -25,12 +27,16 @@ const cards = [
             "Mais um dia para ser feliz! Bora?\n" +
             "Conhecido também como a LENDA!",
         imageUrl: EnzoRocati,
+        instagram: "enzorocati",
+        instagramUrl: "https://www.instagram.com/enzorocati/"
     },
     {
         title: "Calebe Dias",
         description: "O nosso famoso careca dono do @clubedopumpoficial \n" +
             "Faz a jogadinha!\n",
         imageUrl: CalebeDias,
+        instagram: "calebedias",
+        instagramUrl: "https://www.instagram.com/calebedias/"
     },
     {
         title: "Gabriel Ruano",
@@ -38,12 +44,16 @@ const cards = [
             "seguidores.\n" +
             "Ja foram AESTHETICS hoje?",
         imageUrl: GabrielRuano,
+        instagram: "_ruanog",
+        instagramUrl: "https://www.instagram.com/_ruanog/"
     },
     {
         title: "Géder Rocha",
         description: "O grande Men’s Physique PRO 🥇.\n" +
             "Além de coach, traz conteudo sobre seus dias.",
         imageUrl: GenderRocha,
+        instagram: "ggrochapro",
+        instagramUrl: "https://www.instagram.com/ggrochapro/"
     },
     {
         title: "Killyan Scherk",
@@ -51,6 +61,8 @@ const cards = [
             "🏆 Campeão Overall Men’s Physique\n" +
             "Será que você treina fofo?",
         imageUrl: KillyanScherk,
+        instagram: "killyanss",
+        instagramUrl: "https://www.instagram.com/killyanss/"
     },
     {
         title: "Gabriel Gonçalves",
@@ -58,12 +70,16 @@ const cards = [
             "Campeão Sur Pro cup 🏆\n" +
             "Brasileiro 🇧🇷 mais novo a se classificar para Mr. ⭕️lympia",
         imageUrl: GabrielGoncalves,
+        instagram: "gabriel_ggp_",
+        instagramUrl: "https://www.instagram.com/gabriel_ggp_/"
     },
     {
         title: "Vitor Capial",
         description: "Online Coach - TEAM CAPIAL\n" +
             "Famoso inspirador pelo conjunto de roupa COMAM",
         imageUrl: VitorCapial,
+        instagram: "vitorcapial",
+        instagramUrl: "https://www.instagram.com/vitorcapial/"
     }
 ];
 
@@ -151,15 +167,26 @@ const Carousel = () => {
                         p: 0,
                     }}
                 >
-                    <Box id="cards">
+                    <Box id="cards" sx={{ p: 2 }}>
                         <Typography variant="h5" className="card-title">
                             {card.title}
                         </Typography>
                         <Typography variant="body2" className="card-description">
                             {card.description}
                         </Typography>
+                        <a href={card.instagramUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                        <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
+                            <InstagramIcon sx={{ color: '#E1306C', mr: 1 }} />
+                            <Typography variant="body2">
+                                @{card.instagram.replace(' ', '').toLowerCase()}
+                            </Typography>
+                        </Box>
+                        </a>
                         <CopyButton text={copyTextMap[card.title]} />
                     </Box>
+                    <Typography variant="h5" className="card-title">
+                        {card.title}
+                    </Typography>
                 </Card>
             ))}
         </Slider>

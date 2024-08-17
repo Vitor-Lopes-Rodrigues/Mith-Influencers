@@ -24,7 +24,7 @@ export default function Footer() {
                 </div>
                 <div className="footer-text">
                     <p>Este site é um projeto de desenvolvimento criado para praticar habilidades e promover influenciadores.</p>
-                    <p className="highlighted-title">Conheça os seus criadores:</p>
+                    <p className="highlighted-title">Conheça os seus criadores 💪</p>
                     <div className="creators">
                         <h5>
                             Vitor Lopes Rodrigues
