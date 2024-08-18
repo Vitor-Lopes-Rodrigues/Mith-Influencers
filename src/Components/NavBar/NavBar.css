@@ -84,3 +84,37 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-logo {
+        max-width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        max-width: 5vw;
+    }
+    .navbar-item {
+        font-size: 0.1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar-logo {
+        max-width: 0vw;
+    }
+    .navbar-item {
+        font-size: 0.1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-logo {
+        max-width: 0vw;
+    }
+    .navbar-item {
+        font-size: 0.1rem; /* Ajuste o tamanho da fonte conforme necessário */
+    }
+}
