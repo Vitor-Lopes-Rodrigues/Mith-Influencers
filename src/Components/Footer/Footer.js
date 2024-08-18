@@ -6,9 +6,9 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <Navbar bg="dark" variant="dark" className="footer">
+        <Navbar className="footer">
             <Container className="footer-content">
-                <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer" className="footer-brand">
+                <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer" className="footer-brand text-white">
                     &copy; 2024 Mith Oficial. Todos os direitos reservados.
                 </Navbar.Brand>
                 <div className="footer-social">
