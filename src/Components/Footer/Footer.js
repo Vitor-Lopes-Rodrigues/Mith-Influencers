@@ -9,7 +9,8 @@ export default function Footer() {
         <Navbar className="footer">
             <Container className="footer-content">
                 <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer" className="footer-brand text-white">
-                    &copy; 2024 Mith Oficial. Todos os direitos reservados.
+                    &copy; 2024 Mith Oficial.
+                <br/>Todos os direitos reservados.
                 </Navbar.Brand>
                 <div className="footer-social">
                     <a href="https://www.facebook.com/oficialmith/" target="_blank" rel="noopener noreferrer" className="social-icon">

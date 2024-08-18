@@ -61,3 +61,7 @@
 .creators a {
     margin-left: 0.5rem;
 }
+
+@media (max-width: 375px) {
+/*Desnecessário*/
+}
