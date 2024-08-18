@@ -97,7 +97,7 @@ body {
         max-width: 5vw;
     }
     .navbar-item {
-        font-size: 0.1rem; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: 0.1rem;
     }
 }
 
@@ -106,7 +106,7 @@ body {
         max-width: 0vw;
     }
     .navbar-item {
-        font-size: 0.1rem; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: 0.1rem;
     }
 }
 
@@ -115,6 +115,6 @@ body {
         max-width: 0vw;
     }
     .navbar-item {
-        font-size: 0.1rem; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: 0.1rem;
     }
 }

@@ -37,9 +37,9 @@
 }
 
 .card:hover {
-    background-color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
+    background-color: #FFFFFF;
+    box-shadow: #0f0f0f;
+    transform: translateY(-3vw);
 }
 
 /* Responsividade */
@@ -48,6 +48,11 @@
         max-width: 48%;
         flex: 1 1 48%;
     }
+    .card:hover {
+        background-color: #FFFFFF;
+        box-shadow: #0f0f0f;
+        transform: translateY(-3vw);
+    }
 }
 
 @media (max-width: 768px) {
@@ -55,11 +60,23 @@
         max-width: 100%;
         flex: 1 1 100%;
     }
+    .card:hover {
+        background-color: #FFFFFF;
+        box-shadow: #0f0f0f;
+        transform: translateY(-15px);
+
+    }
 }
 
 @media (max-width: 480px) {
     .card h2 {
         font-size: 1.25rem;
+    }
+
+    .card:hover {
+        background-color: #FFFFFF;
+        box-shadow: #0f0f0f;
+        transform: translateY(-15px);
     }
 
     .card p {

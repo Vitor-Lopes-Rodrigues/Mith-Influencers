@@ -85,3 +85,23 @@
 .slick-next {
     right: -50px;
 }
+.slick-dots{
+    color: #FFFFFF;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .95;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
