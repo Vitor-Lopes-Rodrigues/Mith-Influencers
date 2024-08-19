@@ -71,7 +71,7 @@
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     font-family: Montserrat, sans-serif;
-    font-size: 1.1vw;
+    /*font-size: 1.1vw;*/
     font-weight: 500;
     color: #FFFFFF;
     border-bottom-left-radius: 0px;
@@ -139,4 +139,38 @@
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/*Media screen*/
+@media (max-width: 425px) {
+    #title-cards {
+        padding: 2vh;
+        background: rgb(0, 0, 0);
+        background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(9, 9, 9, 0.45) 70%, rgba(24, 24, 24, 0.48) 100%);
+        font-size: 6.5vw;
+        font-family: Montserrat, sans-serif !important;
+        color: #FFFFFF;
+    }
+}
+@media (max-width: 375px) {
+    #title-cards {
+        padding: 2vh;
+        background: rgb(0, 0, 0);
+        background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(9, 9, 9, 0.45) 70%, rgba(24, 24, 24, 0.48) 100%);
+        font-size: 6vw;
+        font-family: Montserrat, sans-serif !important;
+        color: #FFFFFF;
+    }
+}
+@media (max-width: 320px) {
+    #title-cards {
+        padding: 2vh;
+        background: rgb(0, 0, 0);
+        background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(9, 9, 9, 0.45) 70%, rgba(24, 24, 24, 0.48) 100%);
+        font-size: 5vw;
+        font-family: Montserrat, sans-serif !important;
+        color: #FFFFFF;
+    }
 }
