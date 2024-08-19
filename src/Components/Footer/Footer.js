@@ -6,7 +6,7 @@ import './Footer.css';
 
 export default function Footer() {
     return (
-        <Navbar className="footer">
+        <Navbar id="footer" className="footer">
             <Container className="footer-content">
                 <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer" className="footer-brand text-white">
                     &copy; 2024 Mith Oficial.
@@ -37,7 +37,7 @@ export default function Footer() {
                             </a>
                         </h5>
                         <h5>
-                            Richard Valentin Da Silva
+                            Richard Valentim Da Silva
                             <a href="https://www.instagram.com/valentimrichardd/" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaInstagram />
                             </a>

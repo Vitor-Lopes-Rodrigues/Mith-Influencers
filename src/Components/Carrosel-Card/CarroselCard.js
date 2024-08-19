@@ -5,11 +5,10 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './CarroselCard.css';
-import InstagramIcon from '@mui/icons-material/Instagram';
-
 
 // Import Images
 import EnzoRocati from '../../Images/Integrantes/EnzoRocati.png';
@@ -150,46 +149,51 @@ const Carousel = () => {
     };
 
     return (
-        <Slider {...settings}>
-            {cards.map((card, index) => (
-                <Card
-                    id="card"
-                    key={index}
-                    sx={{
-                        backgroundImage: `url(${card.imageUrl})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        borderRadius: '15px',
-                        color: '#fff',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-end',
-                        p: 0,
-                    }}
-                >
-                    <Box id="cards" sx={{ p: 2 }}>
-                        <Typography variant="h5" className="card-title">
+        <Box sx={{ width: '100%', textAlign: 'center', mb: 4 }}>
+            <Typography variant="h4" component="h2" id="title-cards" sx={{ mb: 2, }}>
+                INFLUENCERS MITH
+            </Typography>
+            <Slider {...settings}>
+                {cards.map((card, index) => (
+                    <Card
+                        id="card"
+                        key={index}
+                        sx={{
+                            backgroundImage: `url(${card.imageUrl})`,
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            borderRadius: '15px',
+                            color: '#fff',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'flex-end',
+                            p: 0,
+                        }}
+                    >
+                        <Box id="cards" sx={{ p: 2 }}>
+                            <Typography variant="h5" className="card-title">
+                                {card.title}
+                            </Typography>
+                            <Typography variant="body2" className="card-description">
+                                {card.description}
+                            </Typography>
+                            <a href={card.instagramUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                                <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
+                                    <InstagramIcon sx={{ color: '#E1306C', mr: 1 }} />
+                                    <Typography variant="body2">
+                                        @{card.instagram.replace(' ', '').toLowerCase()}
+                                    </Typography>
+                                </Box>
+                            </a>
+                            <CopyButton text={copyTextMap[card.title]} />
+                        </Box>
+                        <Typography variant="h5" id="title-main" className="card-title">
                             {card.title}
                         </Typography>
-                        <Typography variant="body2" className="card-description">
-                            {card.description}
-                        </Typography>
-                        <a href={card.instagramUrl} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
-                        <Box sx={{ display: 'flex', alignItems: 'center', mt: 1 }}>
-                            <InstagramIcon sx={{ color: '#E1306C', mr: 1 }} />
-                            <Typography variant="body2">
-                                @{card.instagram.replace(' ', '').toLowerCase()}
-                            </Typography>
-                        </Box>
-                        </a>
-                        <CopyButton text={copyTextMap[card.title]} />
-                    </Box>
-                    <Typography variant="h5" className="card-title">
-                        {card.title}
-                    </Typography>
-                </Card>
-            ))}
-        </Slider>
+                    </Card>
+                ))}
+            </Slider>
+        </Box>
     );
 };
 

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 #card {
     height: 400px;
@@ -12,6 +14,15 @@
 #card:hover {
     transform: scale(1.05);
     border-radius: 0px;
+}
+
+#title-cards {
+    padding: 2vh;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(196,196,196,0.0) 70%, rgba(255,255,255,0) 100%);
+    font-weight: 400;
+    font-family: Montserrat, sans-serif !important;
+    color: #FFFFFF;
 }
 
 #cards {
@@ -28,23 +39,47 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease, border-radius 0.5s ease;
 }
 
 #card:hover #cards {
     opacity: 1;
+    border-radius: 0px;
 }
 
 .card-title {
     padding: 10px;
-    font-family: 'Geologica', sans-serif;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
     color: #FFFFFF;
     text-align: center;
 }
 
+.card-title:hover {
+
+}
+
+#title-main {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: Montserrat, sans-serif;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
 .card-description {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-size: 14px;
     color: #FFFFFF;
     font-weight: 400;
@@ -52,7 +87,7 @@
     padding: 0 20px;
 }
 
-/* Estilos para os botões de navegação do carrossel */
+
 .slick-prev,
 .slick-next {
     width: 40px;

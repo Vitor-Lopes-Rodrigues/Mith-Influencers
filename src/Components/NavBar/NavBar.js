@@ -20,13 +20,14 @@ function NavBarMith() {
         <>
             <Navbar id='navbar' variant="dark">
                 <Container id='container-NavBar'>
-                    <Navbar.Brand href="#container-NavBar"><img src={MithOficialLogo} alt="Logo"
-                                                                className="navbar-logo"/></Navbar.Brand>
-                    <Navbar.Brand href="#home" className="navbar-item">Influencers</Navbar.Brand>
-                    <Navbar.Brand href="#home" className="navbar-item">Home</Navbar.Brand>
+                    <div className="div-navbar">
+                        <Navbar.Brand href="#container-NavBar"><img src={MithOficialLogo} alt="Logo" className="navbar-logo"/></Navbar.Brand>
+                    </div>
+                    <Navbar.Brand href="#home" className="navbar-item">HOME</Navbar.Brand>
+                    <Navbar.Brand href="#home" className="navbar-item">INFLUENCERS</Navbar.Brand>
                     <Navbar.Brand href="https://www.mithoficial.com.br/" target="_blank" rel="noopener noreferrer"
-                                  className="navbar-item">Site Oficial Mith</Navbar.Brand>
-                    <Navbar.Brand href="#home" className="navbar-item">Sobre</Navbar.Brand>
+                                  className="navbar-item">MITH STORE</Navbar.Brand>
+                    <Navbar.Brand href="#footer" className="navbar-item">SOBRE</Navbar.Brand>
                 </Container>
             </Navbar>
             <div id="wallpaper">
@@ -37,6 +38,7 @@ function NavBarMith() {
             </div>
             <br/>
             <AboutMith/>
+
             <Footer/>
 
 
